@@ -1,10 +1,13 @@
-# querystring-browser
+# querystring-browser [![npm][npm-image]][npm-url]
 
-Node's querystring module for browsers.
+[npm-image]: https://img.shields.io/npm/v/querystring-browser.svg
+[npm-url]: https://www.npmjs.com/package/querystring-browser
+
+Node.js v5 compatible querystring module for browsers.
 
 ## usage
 
-Require the module or make browserify replace it using a transform such as [aliasify](https://www.npmjs.com/package/aliasify):
+Require the module or make browserify rewrite querystring using a transform such as [aliasify](https://www.npmjs.com/package/aliasify):
 
 ```js
 "aliasify": {
