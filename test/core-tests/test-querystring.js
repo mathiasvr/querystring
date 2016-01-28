@@ -86,7 +86,6 @@ module.exports = function (assert) {
     ['trololol=yes&lololo=no', {'trololol': 'yes', 'lololo': 'no'}]
   ];
 
-  
   assert.strictEqual('918854443121279438895193',
                     qs.parse('id=918854443121279438895193').id);
 
@@ -181,12 +180,11 @@ module.exports = function (assert) {
 
   // Test removing limit
   function testUnlimitedKeys() {
-    var query = {},
-        url;
+    var query = {};
 
     for (var i = 0; i < 2000; i++) query[i] = i;
 
-    url = qs.stringify(query);
+    var url = qs.stringify(query);
 
     assert.equal(
         Object.keys(qs.parse(url, null, null, { maxKeys: 0 })).length,
