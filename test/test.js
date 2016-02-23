@@ -19,3 +19,12 @@ test('core tests: querystring-multichar-separator', function (t) {
   }
   t.end();
 })
+
+test('core tests: test-querystring-maxKeys-non-finite', function (t) {
+  try {
+    require('./core-tests/test-querystring-maxKeys-non-finite')(t);
+  } catch (e) {
+    t.fail(e);
+  }
+  t.end();
+})
