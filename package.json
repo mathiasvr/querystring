@@ -1,6 +1,6 @@
 {
   "name": "querystring-browser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js v5 compatible querystring module for browsers.",
   "main": "querystring.js",
   "scripts": {
