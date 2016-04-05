@@ -5,6 +5,12 @@
 
 Node.js v5 compatible querystring module for browsers.
 
+## install
+
+```
+npm install -g querystring-browser
+```
+
 ## usage
 
 Require the module or make browserify rewrite querystring using a transform such as [aliasify](https://www.npmjs.com/package/aliasify):
